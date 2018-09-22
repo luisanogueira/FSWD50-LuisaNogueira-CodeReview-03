@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Third Project</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<link rel="stylesheet" href="CSS/style.css">
+	
+</head>
+
+<body>
+	<div id="all">
+		<div id="top"> <!-- The logo and banner are placed here-->
+
+			<img class="toplogo" src="img/logo.png">
+			<a target="_blank" href="https://www.codefactory.wien/en/welcome-to-codefactory/"><img class="banner" src="img/banner.png" alt="Full Stack Web Development course in Vienna"></a>
+
+		</div>
+
+		<div id="navbar"> <!-- Navigation menu-->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="team.html">Team</a></li>
+			</ul>
+		</div>
+
+		<div id="team">
+			<h2 class="title">Team members</h2>
+
+			<script type="text/javascript" src="JS/team.json"></script>
+
+			<table id="maintable">
+				<script type="text/javascript">
+					var i=0;
+
+					document.getElementById("maintable").innerHTML += 
+					"<tr class= 'header'><td>Name</td> <td>Email</td> <td>Image</td> </tr>";
+
+					for (i=0; i < objTeam.teamMembers.length; i++) {
+						document.getElementById("maintable").innerHTML += "<tr><td>" + objTeam.teamMembers[i].name + "</td> <td>" + objTeam.teamMembers[i].email + "</td> <td><img class='size' src='"+objTeam.teamMembers[i].image+"'></td> </tr>";
+					}
+				</script>
+			</table>
+
+		</div>
+
+		<div id="footer">
+
+			<img class="downlogo" src="img/logo-inv.png" alt="Newspaper CF">
+
+			<div id="downnav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="team.html">Team</a></li>
+				</ul>
+			</div>
+			
+			<p id="name">Luisa Nogueira - Code Factory 2018</p>
+
+		</div>
+	</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,286 @@
+#all
+	font-family: 'Lato', sans-serif
+	max-width: 1200px
+	margin: 0 auto
+
+#top
+	background-color: #FFE4E1
+	padding-bottom: 60px
+	margin: 20px 150px 0 150px
+
+	.toplogo
+		margin-left: 20px
+		margin-top: 15px
+		margin-bottom: -20px
+
+	.banner
+		float: right
+		margin-top: 15px
+		margin-right: 20px
+
+#navbar
+	margin: 0 150px -20px 150px
+
+	ul
+		list-style-type: none
+		background-color: #8B0000
+		margin: 0
+
+li
+	display: inline-block
+	background-color: #8B0000
+
+li
+	a
+		display: block
+		color: white
+		text-decoration: none
+		padding: 5px
+		font-size: 18px
+
+#main
+	background-image: url("../img/traffic.jpg")
+	background-size: 900px
+	margin: 0 150px -30px 150px
+	.title
+		color: white
+		margin-left: 20px
+		padding-top: 20px
+
+#team
+	margin: 0 150px
+	.title
+		margin-left: 20px
+		padding-top: 20px
+
+#calculate
+	margin: 0 100px
+	background: rgba(255,255,255,0.7)
+	border: 2px solid grey
+	display: inline-flex
+	flex-direction: row
+	flex-wrap: wrap
+
+.titlein
+	text-align: center
+	margin-left: 200px
+	margin-right: 200px
+
+#firstcolumn
+	margin-left: 80px
+	margin-right: 80px
+
+#secondcolumn
+	@extend #firstcolumn
+
+.data
+	font-weight: bold
+	font-size: 15px
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+
+#maintable
+	font-family: Georgia, Arial, serif
+	border-collapse: collapse
+	width: 50%
+
+	table
+		border: 2px solid black
+		border-collapse: collapse
+
+	tr
+		@extend table
+		line-height: 1.5
+
+	td
+		@extend table
+
+.header 
+	font-weight: bold
+	font-size: 18px
+
+.size
+	width: 70%
+
+input
+	padding: 5px
+	border: 1px solid grey
+
+select
+	@extend input
+	width: 175px
+	
+#btn
+	display: flex
+	justify-content: space-between
+	background-color: #008000
+	border: none
+	border-radius: 5px
+	margin: 50px 150px 0 270px
+	width: 150px
+	text-indent: 15px
+	font-size: 25px
+	flex-direction: row
+	color: white
+
+#result
+	margin: 50px 150px 50px 220px
+	display: flex
+	justify-content: center
+	font-size: 20px
+	flex-direction: row
+	color: #008000
+
+#between
+	margin: 0px 150px 0 150px
+	padding: 10px
+	background-color: #D3D3D3
+	.infobig
+		text-align: center
+		margin-left: 150px
+		margin-right: 150px
+	.info
+		@extend .infobig
+
+	.infobig
+		font-size: 25px
+		margin-bottom: -10px
+
+	.info
+		font-size: 18px
+		line-height: 1.5
+		margin-bottom: 10px
+
+#maintwo
+	margin: 0 150px
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-around
+
+#boxone
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+	margin: 50px
+	border: solid 1px black
+	box-shadow: -1px -3px 2px black
+
+	p
+		font-size: 12px
+		padding-right: 20px
+		padding-left: 20px
+		margin-top: 5px
+		margin-bottom: 5px
+
+	.titlebox
+		color: #000080
+		font-size: 18px
+		margin-top: 20px
+
+	.small
+		font-size: 12px
+		margin-bottom: 20px
+
+	.boxli
+		list-style-type: none
+		font-size: 12px
+		li
+			background-color: white
+			display: block
+			line-height: 2
+		li:before
+			content: '✔ '
+
+	.benefits
+		font-weight: bold
+
+
+#boxtwo
+	@extend #boxone
+
+#footer
+	background-color: black
+	padding: 20px
+	margin: 20px 150px
+
+.downlogo
+		float: right
+		margin: 20px
+
+#downnav
+	li
+		a
+			font-size: 18px
+			background-color: black
+			margin-top: -10px
+
+#name
+	text-align: center
+	color: white
+	padding: 30px
+	font-size: 13px
+	margin-bottom: -30px
+
+@media only screen and (max-width: 768px)
+
+	#top
+		margin: 0 20px
+
+	#navbar
+		margin: 0 20px
+
+	#footer
+		margin: 20px
+
+	.banner
+		display: none
+
+	.downlogo
+		text-align: center
+		float: none
+
+	#main
+		display: flex
+		flex-direction: column
+		margin: 0 20px
+
+	#between
+		margin: 0 20px
+		.infobig
+			font-size: 18px
+			margin: 5px
+		.info
+			font-size: 15px
+
+	.titlein
+		text-align: center
+		margin: 10px
+
+	#calculate
+		margin: 10px
+
+	#btn
+		margin: 20px
+		text-align: center
+
+	#result
+		margin: 20px
+		text-align: center
+
+	#maintwo
+		margin: 0 20px
+
+	#boxone
+		margin: 10px
+
+	#team
+		margin: 0 20px
+
+	.size
+		width: 100%
+
+		
+
+	
