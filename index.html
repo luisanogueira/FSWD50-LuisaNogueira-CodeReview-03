@@ -38,7 +38,8 @@
 						<p>Your name:</p>
 					</div>
 					<div>
-						<input id="input1" type="text" name="name">
+						<input id="newname" type="text" name="name" class="changeinput">
+						<span class="errormsg" id="includename"></span>
 						<br>
 					</div>
 
@@ -46,7 +47,7 @@
 						<p>Country:</p>
 					</div>
 					<div>
-						<select id="select" name="country">                                       
+						<select id="select" name="country" class="changeinput">                                       
 					        <option value="austria">Austria</option>
 					        <option value="hungary">Hungary</option>             
 					        <option value="greece">Greece</option>
@@ -57,10 +58,10 @@
 				
 				<div id="secondcolumn">
 					<div class="data">
-						<p>Age:</p>
+						<p>Birth date:</p>
 					</div>
 					<div>
-						<input id="input2" type="text" name="age">
+						<input id="birthday" type="date" name="date" class="changeinput">
 						<br>
 					</div>
 											
@@ -68,7 +69,8 @@
 						<p>Horsepower of your car:</p>
 					</div>
 					<div>
-						<input id="input3" type="text" name="horsepower">
+						<input id="horsepower" type="text" name="horsepower" class="changeinput">
+						<span class="errormsg" id="includehorsep"></span>
 						<br>
 					</div>
 				</div>
@@ -146,7 +148,6 @@
 
 	</div>
 
-	
 </body>
 
 </html>
